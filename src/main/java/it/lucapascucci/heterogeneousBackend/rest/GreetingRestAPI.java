@@ -17,4 +17,9 @@ public class GreetingRestAPI {
         return greetingService.getGreeting(name);
     }
 
+    @GetMapping("/greeting-impe")
+    public Greeting getGreeting() {
+        return greetingService.getGreeting("impe");
+    }
+
 }
